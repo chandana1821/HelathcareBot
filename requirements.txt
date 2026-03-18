@@ -10,3 +10,5 @@ langchain
 langchain-google-genai
 langchain-community
 tqdm
+flask
+gunicorn

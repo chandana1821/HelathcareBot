@@ -12,7 +12,12 @@ warnings.filterwarnings("ignore")
 load_dotenv()
 
 # Initialize Gemini client
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+api_key = os.getenv("GEMINI_API_KEY")
+
+if not api_key:
+    print("Gemini API key not found")
+
+client = genai.Client(api_key=api_key)
 
 # Initialize Pinecone
 pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))

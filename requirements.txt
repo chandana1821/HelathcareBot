@@ -1,0 +1,12 @@
+pinecone
+google-genai
+langchain-community
+langchain-text-splitters
+python-dotenv
+pypdf
+certifi
+pinecone-client
+langchain
+langchain-google-genai
+langchain-community
+tqdm
